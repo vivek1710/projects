@@ -1,28 +1,29 @@
-const navSlide = ()=>{
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.nav-links');
-    const links = document.querySelectorAll('.nav-links li');
+const showMenu = (toggleId, navId) => {
+    const toggle = document.getElementById(toggleId),
+          nav = document.getElementById(navId)
 
-    //Toggle nav
-    burger.addEventListener('click', ()=>{
-        nav.classList.toggle('nav-active')
+    if(toggle && nav){
+        toggle.addEventListener('click', ()=>{
+            nav.classList.toggle('show');
+        })
+    }
+}    
 
-        links.forEach((link, index) => {
-            if(link.style.animation)
-            {
-                link.style.animation = '';
-            }
-            else
-            {
-            link.style.animation   = `navLinksFade 0.5s ease forwards ${index /5 +0.5}s`
-            }
-        });
+showMenu('nav-toggle' , 'nav-menu')
 
-        burger.classList.toggle('toggle')
-    });
 
-    //Animate fade
+const navLink = document.querySelectorAll('.nav__link')
+
+function linkAction()
+{
+    //Active link
+    navLink.forEach( n => n.classList.remove('active'))
+    this.classList.add('active')
+
+    //Remove mobile menu
+    const navMenu = document.getElementById('nav-menu')
+    navMenu.classList.remove('show')
     
-};
+}
 
-navSlide();
+navLink.forEach(n => n.addEventListener('click' , linkAction))

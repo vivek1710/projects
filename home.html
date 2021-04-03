@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <title>Home Page</title>
+</head>
+<body>
+    <!--Header-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="" class="nav__logo">EMOBILE</a>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="" class="nav__link active" >Home</a></li>
+                    <li class="nav__item"><a href="" class="nav__link">Featured</a></li>
+                    <li class="nav__item"><a href="" class="nav__link">New</a></li>
+                    <li class="nav__item"><a href="" class="nav__link">Login</a></li>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <i class="bx bx-cart nav__cart"></i>
+                <i class="bx bx-menu nav__toggle" id="nav-toggle"></i>
+            </div>
+        </nav>
+    </header>
+    <main class="l-main">
+        <!--Home-->
+        <section class="home" id="home">
+            <div class="home__container bd-grid">
+                <div class="home__data">
+                    <h1 class="home__title">NEW <br> <span>ARRIVALS</span></h1>
+                    <a href="#featured" class="button" id="gs">GO BUYING</a>
+                </div>
+                <img src="./1.png" alt="" class="home__img">
+            </div>
+        </section>
+        <!--Collection-->
+        <section class="collection">
+            <div class="collection__container bd-grid">
+                <div class="collection__box">
+                    <img src="./5.jpg" alt="" class="collection__img">
+                    <div class="collection__data">
+                        <h2 class="collection__title"><span class="collection__subtitle">ANDROID</span><br>WORLD</h2>
+                        <a href="" class="collection__view">View Collection</a>
+                    </div>
+                </div>
+
+                <div class="collection__box">
+                    <div class="collection__data">
+                        <h2 class="collection__title"><span class="collection__subtitle">IOS</span><br>WORLD</h2>
+                        <a href="" class="collection__view">View Collection</a>
+                    </div>
+                    <img src="./1.jpeg" alt="" class="collection__img">
+                </div>
+            </div>
+        </section>
+        <!--Featured Products-->
+        <section class="featured section">
+            <div class="featured__container bd-grid">
+                <!--Product1-->
+                <div class="featured__product">
+                    <div class="featured__box">
+                        <div class="featured__new">NEW</div>
+                        <img src="./f/3.png" alt="" class="featured__img">
+                    </div>
+
+                    <div class="featured__data">
+                        <h2 class="featured__name">GOOGLE PIXEL 4a</h2>   
+                        <span class="featured_price">₹32000</span>                 
+                    </div>
+                </div>
+                <!--Product2-->
+                <div class="featured__product">
+                    <div class="featured__box">
+                        <div class="featured__new">NEW</div>
+                        <img src="./f/4.png" alt="" class="featured__img">
+                    </div>
+
+                    <div class="featured__data">
+                        <h2 class="featured__name">ONEPLUS 6T</h2>   
+                        <span class="featured_price">₹42000</span>                 
+                    </div>
+                </div>
+
+                <!--Product3-->
+                <div class="featured__product">
+                    <div class="featured__box">
+                        <div class="featured__new">NEW</div>
+                        <img src="./f/2.png" alt="" class="featured__img">
+                    </div>
+
+                    <div class="featured__data">
+                        <h2 class="featured__name">NOKIA 8</h2>   
+                        <span class="featured_price">₹38000</span>                 
+                    </div>
+                </div>
+
+                <!--Product4-->
+                <div class="featured__product">
+                    <div class="featured__box">
+                        <div class="featured__new">NEW</div>
+                        <img src="./f/5.png" alt="" class="featured__img">
+                    </div>
+
+                    <div class="featured__data">
+                        <h2 class="featured__name">SAMSUNG S10</h2>   
+                        <span class="featured_price">₹50000</span>                 
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <!---->
+<script src="./app.js"></script>
+</body>
+</html>
