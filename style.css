@@ -227,7 +227,7 @@ section
 .home__img
 {
     position: absolute;
-    right: 0;
+    right: -1%;
     bottom: 12%;
     width: 260px;
    
