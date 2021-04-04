@@ -400,7 +400,9 @@ section
 
     .home__img
     {
-        width: 370px;
+        right: 9%;
+        bottom:7%;
+        width:360px;
     }
 
     .collection__container
@@ -464,7 +466,7 @@ section
     .home__img
     {
         right:7%;
-        bottom: -1.5%;
+        bottom: 8%;
     }
     .nav__link
     {
